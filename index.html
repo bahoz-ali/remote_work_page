@@ -26,13 +26,35 @@
         </div>
 
         <ul class="nav-links">
-          <li class="nav-links_link">
+          <li class="nav-links_link dropdown">
             Feature <img src="images/icon-arrow-down.svg" alt="" />
+            <div class="dropdown__menu">
+              <a href="#" class="dropdown__item"
+                ><img src="images/icon-todo.svg" alt="" />Todo List</a
+              >
+              <a href="#" class="dropdown__item"
+                ><img src="images/icon-calendar.svg" alt="" />Calendar</a
+              >
+              <a href="#" class="dropdown__item"
+                ><img src="images/icon-reminders.svg" alt="" />Reminder</a
+              >
+              <a href="#" class="dropdown__item"
+                ><img src="images/icon-planning.svg" alt="" />Planning</a
+              >
+            </div>
           </li>
-          <li class="nav-links_link">
+
+          <li class="nav-links_link dropdown">
             Company <img src="images/icon-arrow-down.svg" alt="" />
+            <div class="dropdown__menu">
+              <a href="#" class="dropdown__item">History</a
+              ><a href="#" class="dropdown__item">Our Team</a
+              ><a href="#" class="dropdown__item">Blog</a>
+            </div>
           </li>
+
           <li class="nav-links_link">Careers</li>
+
           <li class="nav-links_link">About</li>
         </ul>
       </div>
@@ -78,5 +100,7 @@
       </div>
     </main>
     <!-- main section end-->
+
+    <script src="index.js"></script>
   </body>
 </html>
