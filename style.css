@@ -1,1 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-size: 18px;
+  font-family: Epilogue;
+  color: hsl(0, 0%, 8%);
+}
+
+/* general rules */
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/*  NavBar section */
+
+#nav {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 40px;
+  margin-top: 11px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 8%);
+  align-items: center;
+}
+
+.nav-links .nav-links_link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-links .nav-links_link{
+  cursor: pointer;
+}
+
+.login-container {
+}
+
+.btn {
+  background-color: Transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.login-container .login {
+  border: 0;
+}
+
+.login-container .register {
+  /* border-radius: 12px; */
+  border: 1px solid black;
+}
+
+

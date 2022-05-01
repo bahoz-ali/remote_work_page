@@ -13,10 +13,35 @@
     />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="images/logo.svg" alt="logo">
-    
+    <!-- NavBar section start -->
+    <nav id="nav">
+      <div class="logo_links">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+
+        <ul class="nav-links">
+          <li class="nav-links_link">
+            Feature  <img src="images/icon-arrow-down.svg" alt="" />
+          </li>
+          <li class="nav-links_link">
+            Company  <img src="images/icon-arrow-down.svg" alt="" />
+          </li>
+          <li class="nav-links_link">Careers</li>
+          <li class="nav-links_link">About</li>
+        </ul>
+      </div>
+
+      <div class="login-container">
+        <button class="btn login">Login</button>
+        <button class="btn register">Register</button>
+      </div>
+    </nav>
+    <!-- NavBar section end -->
   </body>
 </html>
