@@ -19,6 +19,10 @@ a {
 }
 /*  NavBar section */
 
+.menu {
+  display: none;
+}
+
 #nav {
   padding: 15px 30px;
   display: flex;
@@ -103,7 +107,7 @@ a {
   margin-right: 10px;
   width: 12px;
 }
-/* main section */
+/* *main section */
 * {
   box-sizing: border-box;
 }
@@ -152,6 +156,7 @@ a {
   cursor: pointer;
   outline: 0;
   border: none;
+  white-space: nowrap;
 }
 
 .hero_left-side {
@@ -165,4 +170,78 @@ a {
   width: 100%;
   height: 100%;
   text-align: right;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .hero_right-side img {
+    display: none;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .hero_right-side {
+    grid-row: 1;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images/image-hero-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero_left-side {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero_left-side .hero_header {
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hero_left-side button {
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .hero_left-side p {
+    text-align: center;
+    margin: 20px auto 28px auto;
+    max-width: 30ch;
+  }
+
+  .hero_left-side .hero_part1 .hero_header h1 {
+    display: inline-block;
+    font-size: 55px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0px 15px 0;
+  }
+
+  .menu .icon {
+    width: 30px;
+    height: 25px;
+  }
 }
